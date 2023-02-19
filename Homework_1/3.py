@@ -7,7 +7,7 @@
 # 123456 -> no
 
 
-ticket_number = int(input("Введите номер бтлета: "))
+ticket_number = int(input("Введите номер билета: "))
 
 first_three = (ticket_number // 100_000) + (ticket_number // 10_000 % 10) + (ticket_number // 1_000 % 10 % 10)
 last_three = (ticket_number % 1_000 // 100) + (ticket_number % 100 // 10) + (ticket_number % 10)

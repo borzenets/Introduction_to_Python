@@ -5,7 +5,7 @@
 # 3 2 1 -> no
 
 
-col_chocolate = int(input('Сколько долек в длинну: '))
+col_chocolate = int(input('Сколько долек в длину: '))
 row_chocolate = int(input('Сколько долек в ширину: '))
 cell_quantity = int(input('Сколько долек вы хотите отломить одним действием: '))
 if (cell_quantity % col_chocolate == 0 and cell_quantity / col_chocolate < row_chocolate or

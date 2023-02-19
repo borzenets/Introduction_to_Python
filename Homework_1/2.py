@@ -9,6 +9,6 @@
 
 number_cranes = int(input('Введите количество журавликов: '))
 if number_cranes % 2 == 0:
-    print(f'Петя и Сережа сдалали по {int(number_cranes / 6)}, а Катя сделала {int(number_cranes / 6 * 4)}')
+    print(f'Петя и Сережа сделали по {int(number_cranes / 6)}, а Катя сделала {int(number_cranes / 6 * 4)}')
 else:
     print(f'Решение невозможно')
