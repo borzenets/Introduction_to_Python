@@ -25,3 +25,20 @@ for i in range(sum_digits):
     for j in range(product_digits):
         if sum_digits == i + j and product_digits == i * j:
             print(f'Это числа {i} и {j}')
+
+#  Вариант преподавателя
+
+a, b, c = -1, sum_digits, -product_digits
+def roots(a, b, c):
+    discr = b**2 - 4*a*c
+    if discr > 0:
+        x1 = (-b - discr ** 0.5) / 2 * a
+        x2 = (-b + discr ** 0.5) / 2 * a
+        return int(x1), int(x2)
+    elif discr == 0:
+        x = -b / 2 * a
+        return int(x)
+    else:
+        return 'Петя обманул Катю'
+
+print(roots(a, b, c))
